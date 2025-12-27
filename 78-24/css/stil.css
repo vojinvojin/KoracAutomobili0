@@ -1,0 +1,639 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-family: 'Spectral', serif;
+}
+
+html::-webkit-scrollbar{
+    width: 12px;
+}
+
+html::-webkit-scrollbar-thumb{
+    background-color: rgb(93, 112, 112);
+    border-radius: 30px;
+}
+
+html::-webkit-scrollbar-thumb:hover{
+    background-color: rgb(93, 112, 112);
+}
+
+html::-webkit-scrollbar-track{
+    background-color: rgb(93, 112, 112);
+}
+
+header{
+    top: 0px;
+    width: 100%;
+    height: 80px;
+    background-color: black;
+    position: fixed;
+    z-index: 2;
+    opacity: 99%;
+    user-select: none;
+}
+
+#logo img{
+    margin-top: 18px;
+    margin-left: 30px;
+    width: 40px;
+    background-attachment: fixed;
+}
+
+header h1{
+    color: white;
+    margin-left: 90px;
+    position: absolute;
+    top: 8px;
+    font-size: 42px;
+    font-weight: 100;
+}
+
+nav li{
+    list-style: none;
+    margin-right: 30px;
+    float: right;
+    position: relative;
+    margin-right: 70px;
+}
+
+nav li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    top: -36px;
+    position: relative;
+}
+
+nav li a::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: white;
+    margin: auto;
+    display: block;
+}
+
+nav li a:hover::after{
+    width: 100%;
+    transition: width 0.2s linear;
+    margin-top: 3px;
+}
+
+body{
+font-family: 'Roboto', sans-serif; 
+    background: rgb(20,20,20);
+}
+
+.glavniText{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 1;
+}
+
+.glavniText h1{
+    font-size: 64px;
+    font-weight: 300;
+}
+
+.glavniText p{
+    font-size: 26px;
+    margin-top: 15px;
+    opacity: 0.9;
+}
+
+.glavniBtn{
+    display: inline-block;
+    margin-top: 30px;
+    padding: 12px 30px;
+    border: 1px solid white;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.glavniBtn:hover{
+    background: white;
+    color: black;
+}
+
+.benefits{
+    max-width: 1200px; 
+    margin: 0 auto;  
+    padding: 120px 0; 
+    display: flex;
+    gap: 60px;
+    align-items: center;
+}
+
+.benefits-text{
+    flex: 1;
+}
+
+.benefits-text h1{
+    color: rgb(210, 220, 220);
+    margin-bottom: 30px;
+}
+
+.benefits-text ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+.benefits-text li{
+    color: rgb(200, 210, 210);
+    font-size: 20px;
+    margin-bottom: 14px;
+}
+
+.benefits-text li i{
+    color: #9bbec8;
+    margin-right: 10px;
+}
+
+.benefits-text li i{
+    font-size: 20px;
+}
+
+.benefits-image{
+    flex: 1;
+}
+
+.benefits-image img{
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.current{
+    border-bottom: 2px solid white;
+    padding-bottom: 3px;
+}
+
+.pozadina{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.pozadina img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+#main{
+    background: rgb(20,20,20);
+    text-align: center;
+    padding: 0;
+    background: transparent;
+    text-align: left;
+}
+
+#main figure{
+    margin: 0;
+}
+
+#main h1{
+    color: rgb(194, 201, 201);
+    text-align: center;
+    font-weight: 100;
+    top: 15px;
+}
+
+#main img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: 0.6s;
+    opacity: 0.85;
+    border-radius: 6px;
+}
+
+#main img:hover{
+    transform: scale(1.05);
+    opacity: 100%;
+    filter: brightness(1.2);    
+    filter: contrast(120%);
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.grid figure{
+    margin: 0;
+}
+
+.grid img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: 0.6s;
+    opacity: 0.85;
+}
+
+.grid img:hover{
+    transform: scale(1.05);
+    opacity: 1;
+}
+
+.grid figcaption{
+    margin-top: 12px;
+    font-size: 18px;
+    color: rgb(194,201,201);
+}
+
+.ponuda{
+    z-index: 1;
+    width: 100%;
+    height: 72vh;
+    background-color: rgb(20, 20, 20);
+    position: relative;
+}
+
+.ponuda h1{
+    color: rgb(200, 210, 210);
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    font-weight: 100;
+    font-size: 36px;
+}
+
+.ponudaBox{
+    width: 17%;
+    height: 60%;
+    margin-left: 6.3%;
+    background-color: rgb(63, 62, 62);
+    position: relative;
+    top: 100px;
+    float: left;
+    overflow: hidden;
+    transition: 0.4s;
+    border-radius: 12px;
+    border: 1px solid rgba(155,190,200,0.25);
+    overflow: hidden;
+}
+
+.ponudaBox:hover{
+    transform: scale(1.05);
+}
+
+.ponudaBox img{
+    width: 100%;
+    height: 180px;  
+    object-fit: cover;  
+    display: block;
+    border-radius: 12px 12px 0 0;
+}
+
+.ponudaBox p{
+    color: rgb(200, 210, 210);
+    padding: 20px;
+}
+
+.testimonials{
+    width: 80%;
+    margin: 0 auto;
+    background: rgb(20,20,20); 
+    padding: 120px 0;
+    text-align: center;
+}
+
+.testimonials-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+}
+
+.testimonial{
+    background-color: rgb(63, 62, 62);
+    padding: 30px;
+    border-radius: 14px;
+}
+
+.testimonial:hover{
+    box-shadow: 0 0 18px rgba(155,190,200,0.25);
+    transform: translateY(-3px);
+    transition: 0.3s;
+}
+
+.testimonials h1{
+    color: rgb(200, 210, 210);
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    font-weight: 100;
+    font-size: 36px;
+}
+
+.testimonial h3{
+    color: #9bbec8;
+}
+
+.testimonial p{
+    color: rgb(200, 210, 210);
+}
+
+.footer{
+    width: 100%;
+    height: 200px;
+    background-color: black;
+    z-index: 1;
+    position: relative;
+    margin-top: 80px;
+}
+
+.footer p{
+    color: rgb(194, 201, 201);
+}
+
+.icon{
+    display: flex;
+    justify-content: center;
+}
+
+.icon i{
+    font-size: 34px;
+    color: rgb(194, 201, 201);
+    transition: 0.4s;
+}
+.icon a{
+    top: 55px;
+    position: relative;
+    padding: 0px 20px;
+}
+
+.icon i:hover{
+    color: white;
+    transform: scale(1.1);
+}
+
+#prava{
+    position: relative;
+    top: 100px;
+    font-size: 13px;
+    text-align: center;
+    padding: 0;
+}
+
+.galerijaa{
+    width: 100%;
+    background-color: rgb(25, 25, 25);
+    padding: 120px 0 120px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    padding-bottom: 1px;
+}
+
+.galerijaa img{
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    transition: 1s;
+    filter: blur(0.4px);
+}
+
+.galerijaa img:hover{
+    transform: scale(1.05);
+}
+
+.onama{
+    width: 100%;
+    background-color: rgb(20,20,20);
+    padding: 160px 0 120px 0;
+}
+
+.imgBox{
+    position: relative;
+    width: 45%;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.imgBox img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.imgBox:hover img{
+    transform: scale(1.05);
+}
+
+.imgLeft, .imgRight{
+    width: 80%;
+    margin: 80px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    color: white;
+    transition: 0.5s ease;
+    filter: brightness(0.85);
+}
+
+.imgLeft img, .imgRight img{
+    width: 45%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.imgLeft img:hover, .imgRight img:hover{
+    transform: scale(1.05);
+    filter: brightness(1.1);
+    box-shadow: 0 0 25px rgba(155,190,200,0.4);
+}
+
+.imgLeft p, .imgRight p{
+    width: 50%;
+    font-size: 1.2vw;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.imgLeft p{
+    text-align: justify;
+    margin-top: 6%;
+    font-size: 1.4vw;
+    margin-right: 9.5%;
+    padding-left: 10%;
+}
+
+.imgRight{
+    width: 100%;
+    justify-content: space-around;
+    display: flex;
+    color: white;
+    position: relative;
+    top: 150px;
+    margin-top: 100px;
+}
+
+.imgRight img{
+    width: 35%;
+    margin-right: 9.5%;
+}
+
+.imgRight p{
+    text-align: justify;
+    margin-top: 6%;
+    font-size: 1.4vw;
+    margin-left: 10%;
+    padding-right: 10%;
+}
+
+.data{
+    width: 100%;
+    height: 50vw;
+    background-color: rgb(20, 20, 20);
+}
+
+.all{
+    width: 70%;
+    height: 55vh;
+    display: flex;
+    position: relative;
+    top: 200px;
+    left: 15%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.data h1, .autor h1{
+    position: relative;
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    top: 130px;
+    font-weight: 100;
+}
+
+.contactForm{
+    width: 50%;
+    background-color: rgb(40, 40, 40);
+    position: relative;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.contactForm input{
+    width: 83%;
+    position: relative;
+    margin-left: 8%;
+    margin-top: 5.5%;
+    height: 5vh;
+    text-align: center;
+    font-size: 1.1vw;
+    border-radius: 10px;
+    background-color: rgb(30, 30, 30);
+    border: 1px solid rgb(80, 80, 80);
+    color: white;
+}
+
+.contactForm input:focus, #area:focus{
+    background-color: rgb(25, 25, 25);
+}
+
+#name:hover, #email:hover, #area:hover, #submit:hover{
+    border: 1px solid rgb(110, 110, 110);
+    transition: 300ms;
+}
+
+#submit{
+    color: rgb(120, 120, 120);
+}
+
+#submit:hover{
+    cursor: pointer;
+    color: white;
+}
+
+#area{
+    width: 83%;
+    position: relative;
+    margin-left: 8%;
+    margin-top: 5.5%;
+    height: 20vh;
+    text-align: center;
+    font-size: 1vw;
+    border-radius: 10px;
+    background-color: rgb(30, 30, 30);
+    color: white;
+    border: 1px solid rgb(80, 80, 80);
+}
+
+.all .lokacija iframe{
+    position: relative;
+    width: 35vw;
+    height: 55vh;
+    opacity: 95%;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.autor{
+    background-color: rgb(20, 20, 20);
+    width: 100%;
+    height: 100vh;
+}
+
+.autor img{
+    width: 20%;
+    position: relative;
+    top: 22%;
+    left: 20%;
+    transition: 0.6s ease;
+    border-radius: 12px;
+    filter: brightness(0.9);
+}
+
+.autor img:hover{
+    transform: scale(1.05);
+    filter: brightness(1.1);
+    box-shadow: 0 0 25px rgba(155,190,200,0.35);
+}
+
+.autor p{
+    color: white;
+    position: relative;
+    font-size: 1.4vw;
+    text-align: justify;
+    margin-left: 45%;
+    margin-top: -11%;
+}
+
+.zip{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: 1px solid rgb(194,201,201);
+    color: rgb(194,201,201);
+    text-decoration: none;
+    font-size: 1.3vw;
+    border-radius: 6px;
+    transition: 0.4s;
+}
+
+.zip:hover{
+    background: white;
+    color: black;
+}
